@@ -1,0 +1,25 @@
+{
+    "name": "iboxs/IM",
+    "description": "即时通讯网站集成组件",
+    "type": "1",
+    "license": "Apache License",
+    "authors": [
+        {
+            "name": "zqu",
+            "email": "zqu1016@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "iboxs\\IM\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "iboxs\\IM\\Client::install"
+        ]
+    }
+}
